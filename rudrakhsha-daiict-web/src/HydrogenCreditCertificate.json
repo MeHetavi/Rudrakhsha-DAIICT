@@ -1,0 +1,165 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "reportURI", "type": "string" },
+      { "internalType": "uint256", "name": "amount", "type": "uint256" }
+    ],
+    "name": "submitCertificationRequest",
+    "outputs": [
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "requestId", "type": "uint256" }
+    ],
+    "name": "verifyRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "requestId", "type": "uint256" },
+      { "internalType": "uint256", "name": "approvedAmount", "type": "uint256" },
+      { "internalType": "string", "name": "adminNotes", "type": "string" }
+    ],
+    "name": "approveAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "requestId", "type": "uint256" }
+    ],
+    "name": "mintTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "requestId", "type": "uint256" }
+    ],
+    "name": "getRequest",
+    "outputs": [
+      { "internalType": "address", "name": "startup", "type": "address" },
+      { "internalType": "string", "name": "reportURI", "type": "string" },
+      { "internalType": "uint256", "name": "requestedAmount", "type": "uint256" },
+      { "internalType": "uint256", "name": "approvedAmount", "type": "uint256" },
+      { "internalType": "bool", "name": "verified", "type": "bool" },
+      { "internalType": "bool", "name": "minted", "type": "bool" },
+      { "internalType": "uint256", "name": "timestamp", "type": "uint256" },
+      { "internalType": "string", "name": "adminNotes", "type": "string" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllRequests",
+    "outputs": [
+      { "internalType": "uint256[]", "name": "", "type": "uint256[]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256[]", "name": "requestIds", "type": "uint256[]" }
+    ],
+    "name": "getMultipleRequests",
+    "outputs": [
+      { "internalType": "address[]", "name": "startups", "type": "address[]" },
+      { "internalType": "string[]", "name": "reportURIs", "type": "string[]" },
+      { "internalType": "uint256[]", "name": "requestedAmounts", "type": "uint256[]" },
+      { "internalType": "uint256[]", "name": "approvedAmounts", "type": "uint256[]" },
+      { "internalType": "bool[]", "name": "verifieds", "type": "bool[]" },
+      { "internalType": "bool[]", "name": "minteds", "type": "bool[]" },
+      { "internalType": "uint256[]", "name": "timestamps", "type": "uint256[]" },
+      { "internalType": "string[]", "name": "adminNotes", "type": "string[]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "account", "type": "address" }
+    ],
+    "name": "addCertifier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "account", "type": "address" }
+    ],
+    "name": "addGovernment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalRequests",
+    "outputs": [
+      { "internalType": "uint256", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      { "internalType": "bytes32", "name": "", "type": "bytes32" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CERTIFIER_ROLE",
+    "outputs": [
+      { "internalType": "bytes32", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GOVERNMENT_ROLE",
+    "outputs": [
+      { "internalType": "bytes32", "name": "", "type": "uint256" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "role", "type": "bytes32" },
+      { "internalType": "address", "name": "account", "type": "address" }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      { "internalType": "bool", "name": "", "type": "bool" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "bytes32", "name": "role", "type": "bytes32" }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      { "internalType": "bytes32", "name": "", "type": "bytes32" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
